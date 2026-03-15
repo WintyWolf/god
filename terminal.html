@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 text-white">
+
+<div class="min-h-screen flex">
+
+<div class="w-20 bg-slate-800 flex flex-col items-center py-6 space-y-8 text-xs">
+
+<div class="flex flex-col items-center">
+<svg class="w-6 h-6 mb-1" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+Weather
+</div>
+
+<div class="flex flex-col items-center">
+<svg class="w-6 h-6 mb-1" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+<path d="M3 12h18"/>
+</svg>
+Cities
+</div>
+
+<div class="flex flex-col items-center">
+<svg class="w-6 h-6 mb-1" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+<path d="M3 6h18M3 12h18M3 18h18"/>
+</svg>
+Map
+</div>
+
+<div class="flex flex-col items-center">
+<svg class="w-6 h-6 mb-1" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+<circle cx="12" cy="12" r="3"/>
+</svg>
+Settings
+</div>
+
+</div>
+
+<div class="flex-1 p-6 grid lg:grid-cols-3 gap-6">
+
+<div class="lg:col-span-2 space-y-6">
+
+<div class="bg-slate-800 rounded-xl p-6 flex justify-between items-center">
+
+<div>
+<h1 class="text-2xl font-semibold">Madrid</h1>
+<p class="text-sm text-slate-400">Chance of rain: 0%</p>
+<p class="text-6xl font-bold mt-4">31°</p>
+</div>
+
+<svg class="w-32 h-32" viewBox="0 0 24 24" fill="none" stroke="#FDB813" stroke-width="2">
+<circle cx="12" cy="12" r="5"/>
+<line x1="12" y1="1" x2="12" y2="3"/>
+<line x1="12" y1="21" x2="12" y2="23"/>
+<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+<line x1="1" y1="12" x2="3" y2="12"/>
+<line x1="21" y1="12" x2="23" y2="12"/>
+<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+</svg>
+
+</div>
+
+<div class="bg-slate-800 rounded-xl p-6">
+<p class="text-sm mb-4 text-slate-400">TODAY'S FORECAST</p>
+
+<div class="grid grid-cols-3 md:grid-cols-6 gap-4 text-center">
+
+<div>
+<p class="text-xs">6:00 AM</p>
+<svg class="w-8 h-8 mx-auto my-2" viewBox="0 0 24 24" fill="white">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+25°
+</div>
+
+<div>
+<p class="text-xs">9:00 AM</p>
+<svg class="w-8 h-8 mx-auto my-2" viewBox="0 0 24 24" fill="white">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+28°
+</div>
+
+<div>
+<p class="text-xs">12:00 PM</p>
+<svg class="w-8 h-8 mx-auto my-2" viewBox="0 0 24 24" fill="white">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+33°
+</div>
+
+<div>
+<p class="text-xs">3:00 PM</p>
+<svg class="w-8 h-8 mx-auto my-2" viewBox="0 0 24 24" fill="white">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+34°
+</div>
+
+<div>
+<p class="text-xs">6:00 PM</p>
+<svg class="w-8 h-8 mx-auto my-2" viewBox="0 0 24 24" fill="white">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+32°
+</div>
+
+<div>
+<p class="text-xs">9:00 PM</p>
+<svg class="w-8 h-8 mx-auto my-2" viewBox="0 0 24 24" fill="white">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+30°
+</div>
+
+</div>
+</div>
+
+<div class="bg-slate-800 rounded-xl p-6 grid grid-cols-2 gap-6">
+
+<div>
+<p class="text-sm text-slate-400">Real Feel</p>
+<p class="text-2xl">30°</p>
+</div>
+
+<div>
+<p class="text-sm text-slate-400">Wind</p>
+<p class="text-2xl">0.2 km/h</p>
+</div>
+
+<div>
+<p class="text-sm text-slate-400">Chance of Rain</p>
+<p class="text-2xl">0%</p>
+</div>
+
+<div>
+<p class="text-sm text-slate-400">UV Index</p>
+<p class="text-2xl">3</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="bg-slate-800 rounded-xl p-6">
+
+<p class="text-sm text-slate-400 mb-4">7-DAY FORECAST</p>
+
+<div class="space-y-4 text-sm">
+
+<div class="flex justify-between items-center">
+<span>Today</span>
+<svg class="w-6 h-6" viewBox="0 0 24 24" stroke="#FDB813" fill="none" stroke-width="2">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+<span>36/22</span>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Tue</span>
+<svg class="w-6 h-6" viewBox="0 0 24 24" stroke="#FDB813" fill="none" stroke-width="2">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+<span>37/21</span>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Wed</span>
+<svg class="w-6 h-6" viewBox="0 0 24 24" stroke="#FDB813" fill="none" stroke-width="2">
+<circle cx="12" cy="12" r="5"/>
+</svg>
+<span>37/21</span>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Thu</span>
+<svg class="w-6 h-6" viewBox="0 0 24 24" stroke="white" fill="none" stroke-width="2">
+<path d="M4 15a4 4 0 0 1 4-4 5 5 0 0 1 9 2 3 3 0 0 1 1 6H6a3 3 0 0 1-2-4"/>
+</svg>
+<span>37/21</span>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Fri</span>
+<svg class="w-6 h-6" viewBox="0 0 24 24" stroke="white" fill="none" stroke-width="2">
+<path d="M4 15a4 4 0 0 1 4-4 5 5 0 0 1 9 2 3 3 0 0 1 1 6H6a3 3 0 0 1-2-4"/>
+</svg>
+<span>37/21</span>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Sat</span>
+<svg class="w-6 h-6" viewBox="0 0 24 24" stroke="white" fill="none" stroke-width="2">
+<path d="M8 19v-2M12 19v-2M16 19v-2"/>
+<path d="M4 15a4 4 0 0 1 4-4 5 5 0 0 1 9 2 3 3 0 0 1 1 6H6a3 3 0 0 1-2-4"/>
+</svg>
+<span>37/21</span>
+</div>
+
+<div class="flex justify-between items-center">
+<span>Sun</span>
+<svg class="w-6 h-6" viewBox="0 0 24 24" stroke="yellow" fill="none" stroke-width="2">
+<polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+</svg>
+<span>37/21</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
