@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex justify-center items-center flex-col bg-[#e5e7eb]">
+    <header class="w-full h-16 bg-[#1e293b] flex items-center pl-10 mb-8 shadow-lg">
+        <h1 class="font-black text-2xl text-white tracking-widest uppercase">EduSupplies</h1>
+    </header>
+
+    <div class="w-[90%] h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-white p-3 border border-gray-300 rounded-sm flex flex-col">
+            <img src="" id="img1" class="h-48 w-full object-cover mb-3">
+            <h1 id="name1" class="text-gray-900 text-sm font-bold uppercase"></h1>
+            <p id="price1" class="text-blue-600 font-mono text-lg mb-3"></p>
+            <button class="w-full py-2 bg-[#1e293b] text-white text-xs font-bold uppercase">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-3 border border-gray-300 rounded-sm flex flex-col">
+            <img src="" id="img2" class="h-48 w-full object-cover mb-3">
+            <h1 id="name2" class="text-gray-900 text-sm font-bold uppercase"></h1>
+            <p id="price2" class="text-blue-600 font-mono text-lg mb-3"></p>
+            <button class="w-full py-2 bg-[#1e293b] text-white text-xs font-bold uppercase">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-3 border border-gray-300 rounded-sm flex flex-col">
+            <img src="" id="img3" class="h-48 w-full object-cover mb-3">
+            <h1 id="name3" class="text-gray-900 text-sm font-bold uppercase"></h1>
+            <p id="price3" class="text-blue-600 font-mono text-lg mb-3"></p>
+            <button class="w-full py-2 bg-[#1e293b] text-white text-xs font-bold uppercase">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-3 border border-gray-300 rounded-sm flex flex-col">
+            <img src="" id="img4" class="h-48 w-full object-cover mb-3">
+            <h1 id="name4" class="text-gray-900 text-sm font-bold uppercase"></h1>
+            <p id="price4" class="text-blue-600 font-mono text-lg mb-3"></p>
+            <button class="w-full py-2 bg-[#1e293b] text-white text-xs font-bold uppercase">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-3 border border-gray-300 rounded-sm flex flex-col">
+            <img src="" id="img5" class="h-48 w-full object-cover mb-3">
+            <h1 id="name5" class="text-gray-900 text-sm font-bold uppercase"></h1>
+            <p id="price5" class="text-blue-600 font-mono text-lg mb-3"></p>
+            <button class="w-full py-2 bg-[#1e293b] text-white text-xs font-bold uppercase">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-3 border border-gray-300 rounded-sm flex flex-col">
+            <img src="" id="img6" class="h-48 w-full object-cover mb-3">
+            <h1 id="name6" class="text-gray-900 text-sm font-bold uppercase"></h1>
+            <p id="price6" class="text-blue-600 font-mono text-lg mb-3"></p>
+            <button class="w-full py-2 bg-[#1e293b] text-white text-xs font-bold uppercase">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-3 border border-gray-300 rounded-sm flex flex-col">
+            <img src="" id="img7" class="h-48 w-full object-cover mb-3">
+            <h1 id="name7" class="text-gray-900 text-sm font-bold uppercase"></h1>
+            <p id="price7" class="text-blue-600 font-mono text-lg mb-3"></p>
+            <button class="w-full py-2 bg-[#1e293b] text-white text-xs font-bold uppercase">Buy Now</button>
+        </div>
+
+    </div>
+
+    <script>
+        let products = [
+            {
+                name: "NOTEBOOK",
+                price: "$12.50",
+                picture: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?q=80&w=2000&auto=format&fit=crop"
+            },
+            {
+                name: "PENCIL",
+                price: "$8.99",
+                picture: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000&auto=format&fit=crop"
+            },
+            {
+                name: "ERASER",
+                price: "$4.50",
+                picture: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?q=80&w=2000&auto=format&fit=crop"
+            },
+            {
+                name: "DESK",
+                price: "$24.99",
+                picture: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?q=80&w=2000&auto=format&fit=crop"
+            },
+            {
+                name: "HIGHLIGHTER",
+                price: "$15.00",
+                picture: "https://images.unsplash.com/photo-1511300636408-a63a89df3482?q=80&w=2000&auto=format&fit=crop"
+            },
+            {
+                name: "GEOMETRY",
+                price: "$18.75",
+                picture: "https://images.unsplash.com/photo-1580974852861-f48420e64402?q=80&w=2000&auto=format&fit=crop"
+            },
+            {
+                name: "BACKPACK",
+                price: "$45.00",
+                picture: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=2000&auto=format&fit=crop"
+            }
+        ]
+
+        document.getElementById('name1').innerText = products[0].name;
+        document.getElementById('price1').innerText = products[0].price;
+        const img1 = document.getElementById('img1');
+        img1.src = products[0].picture;
+
+        document.getElementById('name2').innerText = products[1].name;
+        document.getElementById('price2').innerText = products[1].price;
+        const img2 = document.getElementById('img2');
+        img2.src = products[1].picture;
+
+        document.getElementById('name3').innerText = products[2].name;
+        document.getElementById('price3').innerText = products[2].price;
+        const img3 = document.getElementById('img3');
+        img3.src = products[2].picture;
+
+        document.getElementById('name4').innerText = products[3].name;
+        document.getElementById('price4').innerText = products[3].price;
+        const img4 = document.getElementById('img4');
+        img4.src = products[3].picture;
+
+        document.getElementById('name5').innerText = products[4].name;
+        document.getElementById('price5').innerText = products[4].price;
+        const img5 = document.getElementById('img5');
+        img5.src = products[4].picture;
+
+        document.getElementById('name6').innerText = products[5].name;
+        document.getElementById('price6').innerText = products[5].price;
+        const img6 = document.getElementById('img6');
+        img6.src = products[5].picture;
+
+        document.getElementById('name7').innerText = products[6].name;
+        document.getElementById('price7').innerText = products[6].price;
+        const img7 = document.getElementById('img7');
+        img7.src = products[6].picture;
+    </script>
+  </body>
+</html>
